@@ -43,7 +43,7 @@ defmodule Scry.Engine.MongoDB.MixProject do
       # `Scry.Core.EngineBehaviour` and returns `Scry.Core.Query.t()`-
       # shaped data, so it's the real dependency, not test-only. Switch
       # to a `~> x.y` Hex requirement once scry_core is actually
-      # published (impl_spec.md's own dependency-versions convention).
+      # published.
       {:scry_core, path: "../scry_core"},
 
       # === PARITY TESTING ===
@@ -51,9 +51,8 @@ defmodule Scry.Engine.MongoDB.MixProject do
       # test-only, since AGENTS.md's "Parity between multiple
       # implementations" rule applies directly here: the reference
       # executor and this real adapter are two implementations of the
-      # identical DEEP/PARENT/SIBLINGS/ANCESTORS semantics (lang_spec.md
-      # §8.3), the same posture already established for `scry_graph`/
-      # `scry_engine_neo4j`.
+      # identical DEEP/PARENT/SIBLINGS/ANCESTORS semantics, the same
+      # posture already established for `scry_graph`/`scry_engine_neo4j`.
       {:scry_document, path: "../scry_document", only: :test},
 
       # === MONGODB DRIVER ===

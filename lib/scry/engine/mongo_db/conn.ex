@@ -3,7 +3,7 @@ defmodule Scry.Engine.MongoDB.Conn do
   Wraps a `mongodb_driver` connection pid -- opened once via `open/1`
   and meant to be reused across many `Scry.Engine.MongoDB.execute/3`
   calls, matching the connection/config struct every real adapter
-  exposes (impl_spec.md §2). `mongodb_driver` is `DBConnection`-based
+  exposes. `mongodb_driver` is `DBConnection`-based
   (`Mongo.start_link/1`), the same supervised-reconnecting-process shape
   `redix`/`myxql`/`postgrex`/`boltx` already have.
 

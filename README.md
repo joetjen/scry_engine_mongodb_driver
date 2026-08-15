@@ -21,9 +21,8 @@ just the rows behind one already-resolved source. This package
 implements `Scry.Core.EngineBehaviour` directly instead.
 
 Source: <https://github.com/joetjen/scry_engine_mongodb_driver>. Specs
-live in the separate [`scry`](https://github.com/joetjen/scry)
-repository; the behaviour this implements lives in
-[`scry_core`](https://github.com/joetjen/scry_core).
+live in the separate `scry` repository; the behaviour this implements
+lives in [`scry_core`](https://github.com/joetjen/scry_core).
 
 ## Usage
 

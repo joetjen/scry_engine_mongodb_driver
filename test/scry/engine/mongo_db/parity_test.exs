@@ -5,8 +5,8 @@ defmodule Scry.Engine.MongoDB.ParityTest do
   plain in-memory `%{path => rows}` map) and this package's `Scry.
   Engine.MongoDB` (a real MongoDB-backed adapter) are two
   implementations of the identical `DEEP`/`PARENT`/`SIBLINGS`/
-  `ANCESTORS` semantics (lang_spec.md §8.3) -- the same posture already
-  established for `scry_graph`/`scry_engine_neo4j`. Rather than
+  `ANCESTORS` semantics -- the same posture already established for
+  `scry_graph`/`scry_engine_neo4j`. Rather than
   asserting each package's own output looks plausible in isolation,
   this suite parses one query text *once* (`Scry.Document.parse/1`, the
   same grammar/AST both engines are handed), then runs the exact same
